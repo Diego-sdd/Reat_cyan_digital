@@ -2,64 +2,48 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../body/styles.css';
 import { Row, Container, Col, Image, Button, Carousel, Card } from 'react-bootstrap';
+
+import icon1 from '../body/image/programacao.png';
+import icon2 from '../body/image/designgrafico.png';
+import icon3 from '../body/image/webdesign.png';
+
+import tipmart from '../body/image/tipmart.png';
+import openheart from '../body/image/openheart.png';
+import ac from '../body/image/agilecards.png';
+import panfleto1 from '../body/image/panfleto.png';
+import panfleto2 from '../body/image/panfleto2.png';
+import logotipmart from '../body/image/tipmartlogo.png';
+
+
 const BodyContent = () => (
     <body>
-        <Container fluid={true}>
-
-
-
-            <Row>
-                <Col xs lg="6"><Image src="https://www.fcamara.com.br/images/home/home-intro.png" rounded id="img_top" /></Col>
-
-                <Col xs lg="6">
-                    <section className="content_top">
-                        <h6 id="h6_content_top">Inovação Tecnologica Para Você e Sua Empresa</h6>
-                        <h1> Vestibulum nisl enim, dignissim nec consequat id, iaculis nec ligula.</h1>
-                        <Button className="btn_content_top" size="lg" block>
-                            Entre em Contato
-                        </Button>
-                    </section>
-                </Col>
-            </Row>
-
-
+        <Container fluid={true} style={{color: "black"}}>
 
             <Row>
                 <Col xs lg="12" className="content_products">
                     <Col xs lg="12">
-                        <Image src="logo512.png" id="img_content_products_logo" ></Image>
-
-                    </Col>
-                    <Col xs lg="12">
                         <h4 id="title_content_products">Principais Soluções</h4>
                     </Col>
                     <Row>
-                        <Col xs lg="3">
+                        <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src="icons/url.png" ></Image>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <Image src={icon1}></Image>
+                                <h4 className="subtitle">PROGRAMAÇÃO</h4>
+                                <p>Desenvolvemos sites, blogs, portfólios e outros sistemas web com o objetivo de proporcionar uma ótima solução ao cliente!</p>
                             </div>
                         </Col>
-                        <Col xs lg="3">
+                        <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src="icons/url.png" ></Image>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <Image src={icon2}></Image>
+                                <h4 className="subtitle">DESIGN GRÁFICO</h4>
+                                <p>Criamos logos, banners, panfletos e outros modelos de design com o objetivo de proporcionar uma ótima solução ao cliente!</p>
                             </div>
                         </Col>
-                        <Col xs lg="3">
+                        <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src="icons/url.png" ></Image>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </Col>
-                        <Col xs lg="3">
-                            <div className="solutions_icons">
-                                <Image src="icons/url.png" ></Image>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <Image src={icon3}></Image>
+                                <h4 className="subtitle">WEB DESIGNER</h4>
+                                <p>Analisamos e reparamos interfaces, cores, layouts e outros componentes com o objetivo de proporcioanr uma ótima solução de UX e UI ao cliente!</p>
                             </div>
                         </Col>
                     </Row>
@@ -74,50 +58,50 @@ const BodyContent = () => (
                 <ul className="gallery_box">
 
                     <li>
-                        <a href="#0"><img src="https://picsum.photos/600/700/?random"></img>
+                        <a href="#0"><img src={tipmart}></img>
                             <div className="box_data">
-                                <span>Ravi With Bike</span>
+                                <span className="boxtitle">TIPMART</span>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#0"><img src="https://picsum.photos/600/700/?random"></img>
+                        <a href="#0"><img src={openheart}></img>
                             <div className="box_data">
-                                <span>Ravi Singh</span>
-                            </div>
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#0"><img src="https://picsum.photos/600/702/?random"></img>
-                            <div className="box_data">
-                                <span>White wall</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#0"><img src="https://picsum.photos/600/703/?random"></img>
-                            <div className="box_data">
-                                <span>Green Tree</span>
+                                <span className="boxtitle">OPEN HEART</span>
                             </div>
                         </a>
                     </li>
 
 
                     <li>
-                        <a href="#0"><img src="https://picsum.photos/600/704/?random"></img>
+                        <a href="#0"><img src={ac}></img>
                             <div className="box_data">
-                                <span>Blue</span>
+                                <span className="boxtitle">LOGO AGILE CARDS</span>
                             </div>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#0"><img src="https://picsum.photos/600/705/?random"></img>
+                        <a href="#0"><img src={panfleto1}></img>
                             <div className="box_data">
-                                <span>Ravi</span>
+                                <span className="boxtitle">PANFLETO S.I.</span>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#0"><img src={panfleto2}></img>
+                            <div className="box_data">
+                                <span className="boxtitle">PANFLETO N&N REPAROS</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#0"><img src={logotipmart}></img>
+                            <div className="box_data">
+                                <span className="boxtitle">LOGO TIPMART</span>
                             </div>
                         </a>
                     </li>

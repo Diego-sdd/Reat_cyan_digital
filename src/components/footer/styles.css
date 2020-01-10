@@ -4,13 +4,24 @@
     --third: #000000d8;
     --white:rgb(240, 231, 231);
 }
+
+html { 
+    font-family: 'Roboto', 'sans-serif'
+    }
+
 .footer{
     background-color: var(--third);
 }
-#title_footer{
-    background:var(--primary);
+.titlefooter{
     color:white;
+    text-transform: uppercase;
+    font-weight: 500;
 }
+
+.espacamento{
+    margin-bottom: 20px;
+}
+
 .text_footer{
     margin-top:30px;
     margin-right: 20%;
@@ -20,4 +31,9 @@
 }
 .contact_footer{
     color:white;
+}
+
+.centralizar{
+    text-align: center;
+    padding: 0px;
 }

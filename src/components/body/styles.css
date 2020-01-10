@@ -5,22 +5,20 @@
     --white:rgb(240, 231, 231);
 }
 
+html { 
+    font-family: 'Roboto', 'sans-serif'
+    }
+
+
 body{
     background: var(--write);
     width: 100%;
 }
-#img_top{
-    width: 100%;
-    margin-top:10%;
-    text-align:right;
-}
-.content_top{
-    margin-top:30%;
-}
+
 .btn_content_top{
     background: var(--primary);
     border:1px var(--primary);
-    margin-top: 10%;
+
 }
 .btn_content_top:hover{
     background: var(--third);
@@ -35,31 +33,48 @@ body{
 .content_products{
     position: relative;
     background-color: var(--third);
-    height: 600px;
+    height: 450px;
     color:white;
-    margin-top: 100px;
 }
-#img_content_products_logo{
-    margin-top:20px;
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #title_content_products{
-    margin-top:30px;
-    margin-bottom:50px;
+    margin-top:20px;
+    padding-top: 30px;
     text-align: center;
     color:var(--second);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 34px;
 }
+
+
+.subtitle{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #title_content_products{
+        font-size: 24px;
+    }
+    .subtitle {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0px;
+    }
+
+    .content_products{
+        height: 550px;
+    }
+
+  }
 .solutions_icons{
     text-align: center;
     color:white;
 }
-.solutions_icons h4{
-    margin-top:20px;
-    margin-bottom: 20px;
-}
+
 
 
 
@@ -74,6 +89,15 @@ img{ max-width:100%;}
 
 .gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
 .gallery_box{ padding:0;display: flow-root;}
+
+
+.boxtitle{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px black; 
+    color: rgb(219, 219, 219);
+}
 
 .gallery_box li:hover img {
     -moz-transform: scale(1.1);
@@ -91,11 +115,11 @@ img{ max-width:100%;}
 .gallery_box li:nth-child(odd) {
     height: 320px; 
 }
-.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
-.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0, 0, 0, 0.322) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0, 0, 0, 0.322) }
 .gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
 .gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
-.gallery_box li:hover .box_data{ background: #3ca7f894;;}
+.gallery_box li:hover .box_data{ background: #156caf94;;}
 
 
 .title_depoimento{

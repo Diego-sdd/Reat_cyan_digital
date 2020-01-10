@@ -1,39 +1,46 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import '../footer/styles.css';
-import { Row, Container, Col, Image } from 'react-bootstrap';
-const FooterContent = () => (
-    <body>
-        <Container fluid={true}>
-            <Row>
-                <Col xs lg="12" className="footer">
-                    <Row>
-                        <Col xs lg="12" id="title_footer">
-                            <h4 className="text-center">Footer</h4>
-                        </Col>
-                        <Col xs lg="6">
-                            <Image src="Logo.png" ></Image>
-                        </Col>
-                        <Col xs lg="6">
-                            <div className="text_footer">
-                                <h6>Soluções ideias para criação de site e loja virtual para pequenas e médias empresas. </h6>
 
-                            </div>
-                            <div className="contact_footer">
-                                <p>Instagram</p>
-                                <p>Facebook</p>
-                                <p>E-mail</p>
-                                <p></p>
-                            </div>
-                        </Col>
-
-                    </Row>
-                </Col>
-            </Row>
+import logo from '../footer/image/logo512.png';
 
 
-        </Container>
-    </body>
-);
+const FooterContent = () => {
+  return (
+    <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4">
+      <MDBContainer fluid>
+        <MDBRow>
+          <MDBCol md="6" className="text-center espacamento">
+
+          <img src={logo}></img>
+
+          </MDBCol>
+          <MDBCol md="6">
+            <h5 className="titlefooter text-center">Contatos</h5>
+            <ul className="centralizar">
+              <li className="list-unstyled">
+                <a href="#!">FACEBOOK</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">INSTAGRAM</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">LINKEDIN</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">BEHANCE</a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright: <a href="www.cyandigital.com.br">CYANDigital.com.br</a>
+        </MDBContainer>
+      </div>
+    </MDBFooter>
+  );
+}
 
 export default FooterContent;

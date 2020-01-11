@@ -19,9 +19,19 @@ html {
 }
 
 .espacamento{
-    margin-bottom: 20px;
+    margin-top: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+
+.espacamento{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    max-width: 300px;
+
+}
+
+}
 .text_footer{
     margin-top:30px;
     margin-right: 20%;

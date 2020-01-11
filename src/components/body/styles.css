@@ -32,6 +32,7 @@ body{
 .z-depth-1{
 width: 100%;
 }
+
 .title{
     font-family: 'Roboto', 'sans-serif';
     font-weight: 400;
@@ -190,7 +191,66 @@ img{ max-width:100%;}
 .gallery_box li:hover .box_data{ background: #156caf94;;}
 
 
+/* DEPOIMENTO */
+
 .title_depoimento{
-    margin-top:50px;
+    margin-top:30px;
     margin-bottom: 50px;
+    font-family: 'Roboto', 'sans-serif';
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #303030;
+    font-size: 30px;
+}
+
+.bg_depoimento{
+    background-color: #e3e3e3;
+    padding: 0px;
+    margin-top: -11px;
+    margin-bottom: -19px;
+}
+
+.imagem_ajuste{
+    border-radius: 50%;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.texto_depoimento h3{
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.texto_depoimento p{
+    font-size: 12px;
+    margin-top: 0px;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+
+.ajustar_carousel{
+    margin-top: -25px;
+    height: 250px;
+}
+
+/* AJUSTAR QUANDO A TELA FOR GRANDE */
+@media only screen and (min-width: 600px) {
+    .imagem_ajuste{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+/*/
+
+/* AJUSTAR QUANDO A TELA FOR MENOR */
+@media only screen and (max-width: 600px) {
+.ajustar_carousel{
+    height: 350px !important;
+}
 }

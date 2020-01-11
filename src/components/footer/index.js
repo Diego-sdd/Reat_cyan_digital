@@ -10,9 +10,9 @@ const FooterContent = () => {
     <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4">
       <MDBContainer fluid>
         <MDBRow>
-          <MDBCol md="6" className="text-center espacamento">
+          <MDBCol md="6" className="text-center">
 
-            <img src={logo}></img>
+            <img src={logo} className="espacamento"></img>
 
           </MDBCol>
           <MDBCol md="6">
@@ -36,7 +36,7 @@ const FooterContent = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="www.cyandigital.com.br">CYANDigital.com.br</a>
+         Cyan Marketing Digital &copy; {new Date().getFullYear()}
         </MDBContainer>
       </div>
     </MDBFooter>

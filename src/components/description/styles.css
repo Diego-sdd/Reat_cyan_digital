@@ -160,7 +160,7 @@ body{
   .borda_servicos_cima{
     height: 4px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 180px;
+    top: 270px;
   }
 
   .borda_servicos_baixo{
@@ -182,7 +182,7 @@ body{
 @media only screen and (max-width: 608px) {
 
   .borda_servicos_cima{
-    top: 179px;
+    top: 270px;
   }
 
 }
@@ -193,7 +193,7 @@ body{
   .borda_servicos_cima{
     height: 8px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 280px;
+    top: 400px;
   }
 
   .img_top p{
@@ -239,7 +239,7 @@ body{
   .borda_servicos_cima{
     height: 8px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 240px;
+    top: 360px;
   }
 
 }
@@ -249,7 +249,7 @@ body{
   .borda_servicos_cima{
     height: 8px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 200px;
+    top: 320px;
   }
 
 }

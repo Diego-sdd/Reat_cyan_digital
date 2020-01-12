@@ -6,3 +6,8 @@ html {
     max-height: 40px;
     margin: 2px;
 }
+@media only screen and (max-width: 780px) {
+    .teste{
+    background-color: #212121;
+    }
+}

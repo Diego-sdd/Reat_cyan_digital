@@ -4,6 +4,13 @@ import './styles.css';
 
 import slide3 from '../body/image/slide3.png';
 
+import web from '../description/img/des-web.png';
+import design from '../description/img/web-design.png';
+import seo from '../description/img/SEO.png';
+import uxui from '../description/img/uxui.png';
+import branding from '../description/img/branding.png';
+import sociais from '../description/img/REDES.png';
+
 class Descriptions extends React.Component {
     render() {
         return (
@@ -13,12 +20,17 @@ class Descriptions extends React.Component {
                         <img src={slide3}></img>
                         <figcaption>CONFIRA ABAIXO TODOS OS NOSSOS SERVIÇOS</figcaption>
                         <p>Somos uma Agência de Performance Digital, focada em gerar orçamentos,<br></br>
-negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</p>
+                        negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</p>
                     </div>
+                
                 </MDBRow>
 
+                    <MDBRow>
+                        <MDBCol size="12" className="borda_servicos_cima"></MDBCol>
+                    </MDBRow>
 
-                <MDBRow>
+                <MDBRow className="bg_servicos">
+
                 <MDBCol md="5" className="text-servicos">
                         <h1 className="text-center">As Melhores soluções geram as <strong>Melhores Experiências.</strong></h1>
                         <p className="text-center">Oferecemos os mais diversos tipos de soluções buscando apresentar um serviço com qualidade e eficiência ao cliente.</p>
@@ -29,7 +41,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={web} />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>WEB SITES</h1>
@@ -44,7 +56,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={design} />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>DESIGN GRÁFICO</h1>
@@ -59,7 +71,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={seo} waves />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>SEO</h1>
@@ -74,7 +86,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={uxui}/>
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>UX/UI</h1>
@@ -89,7 +101,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={branding}/>
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>BRANDING</h1>
@@ -104,7 +116,7 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                                        <MDBCardImage className="img-fluid" src={sociais}/>
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>REDES SOCIAIS</h1>
@@ -118,6 +130,8 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                         </MDBRow>
                     </MDBCol>
 
+                        <MDBCol size="12" className="borda_servicos_baixo"></MDBCol>
+
                     <MDBCol md="12" className="happy-company">
                         <h1 className="happy-company_title text-center">QUALIDADE E EFICIÊNCIA PARA O SEU NEGÓCIO</h1>
                         <p className="happy-company_text text-center">Para que a sua empresa ofereça uma experiência digital marcante, a Cyan coloca à sua disposição
@@ -125,10 +139,11 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                             todos engajados em proporcionar os melhores resultados e a plena satisfação do seu cliente
                             ao pesquisar sobre seus produtos ou serviços. </p>
                     </MDBCol>
-
-
                 </MDBRow>
 
+                    <MDBRow>
+                        <MDBCol size="12" className="borda_consultoria_cima"></MDBCol>
+                    </MDBRow>
 
                 <MDBRow className="text-contact-service">
                     <MDBCol md="8" className="text-center">
@@ -147,6 +162,12 @@ negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</
                         </Fragment>
                     </MDBCol>
                 </MDBRow>
+
+                
+                    <MDBRow>
+                        <MDBCol size="12" className="borda_consultoria_baixo"></MDBCol>
+                    </MDBRow>
+
             </MDBContainer>
         );
     }

@@ -99,17 +99,28 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
+
     #title_content_products{
         font-size: 24px;
     }
+
     .subtitle {
       font-size: 14px;
       font-weight: 500;
       padding: 0px;
     }
 
+    .solutions_icons img{
+        margin-top: 10px;
+        max-width: 70px;
+    }
+
+    .solutions_icons p{
+        display: none;
+    }
+
     .content_products{
-        height: 550px;
+        height: 250px;
     }
 
   }
@@ -117,6 +128,7 @@ h3 {
     text-align: center;
     color:white;
 }
+
 
 
 
@@ -239,6 +251,56 @@ img{ max-width:100%;}
     height: 250px;
 }
 
+.ajuste_logo img{
+    max-width: 100px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.bg_marcas{
+    background-color: #333333;
+    text-align: center;
+    margin-top: -14px;
+}
+
+.bg_marcas h1{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+/* BORDAS DEGRADE */
+
+
+.borda_solucoes_cima{
+    height: 4px;
+    background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
+    margin-top: 0px;
+}
+
+.borda_servicos_cima{
+    height: 4px;
+    background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
+    margin-top: -90px;
+}
+
+.borda_marca1{
+    height: 4px;
+    background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
+    margin-top: -18px;
+}
+
+.borda_marca2{
+    height: 4px;
+    background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+
+
+
+
 /* AJUSTAR QUANDO A TELA FOR GRANDE */
 @media only screen and (min-width: 600px) {
     .imagem_ajuste{
@@ -250,7 +312,24 @@ img{ max-width:100%;}
 
 /* AJUSTAR QUANDO A TELA FOR MENOR */
 @media only screen and (max-width: 600px) {
-.ajustar_carousel{
-    height: 350px !important;
-}
+    .ajustar_carousel{
+        height: 350px !important;
+    }
+
+    .bg_marcas h1{
+
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .ajuste_logo img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .borda_servicos_cima{
+        height: 4px;
+        background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
+        margin-top: -121px;
+    }
 }

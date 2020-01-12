@@ -7,7 +7,7 @@ import logo from '../footer/image/logo512.png';
 
 const FooterContent = () => {
   return (
-    <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4">
+    <MDBFooter color="elegant-color-dark" className="font-small pt-4">
       <MDBContainer fluid>
         <MDBRow>
           <MDBCol md="6" className="text-center">

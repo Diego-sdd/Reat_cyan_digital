@@ -25,7 +25,7 @@ class Header extends React.Component {
       <div>
         <header>
 
-          <MDBNavbar color="grey darken-4" fixed="top" dark expand="md" scrolling transparent>
+          <MDBNavbar color="grey darken-4" className="teste" fixed="top" dark expand="md" scrolling transparent>
             <MDBNavbarBrand href="/">
               <img src={logo} className="img_logo_nav" />
             </MDBNavbarBrand>

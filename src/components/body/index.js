@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../body/styles.css';
 import { Row, Container, Col, Image, Button, Carousel, Card } from 'react-bootstrap';
 import { MDBCarouselCaption, MDBMask, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView } from 'mdbreact';
+import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import slide1 from '../body/image/slide1.png';
 import slide2 from '../body/image/slide2.png';
 import slide3 from '../body/image/slide3.png';
@@ -17,6 +18,11 @@ import ac from '../body/image/agilecards.png';
 import panfleto1 from '../body/image/panfleto.png';
 import panfleto2 from '../body/image/panfleto2.png';
 import logotipmart from '../body/image/tipmartlogo.png';
+
+import logo1 from '../body/image/LOGO1.png';
+import logo2 from '../body/image/LOGO2.png';
+import logo3 from '../body/image/LOGO3.png';
+import logo4 from '../body/image/LOGO4.png';
 
 
 const BodyContent = () => (
@@ -80,6 +86,14 @@ const BodyContent = () => (
                     </MDBCarouselInner>
                 </MDBCarousel>
             </Row>
+
+
+                <MDBRow>
+                <MDBCol size="12" className="borda_solucoes_cima">
+                </MDBCol>
+                </MDBRow>
+
+
             <Row>
                 <Col xs lg="12" className="content_products">
                     <Col xs lg="12">
@@ -88,21 +102,21 @@ const BodyContent = () => (
                     <Row>
                         <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src={icon1}></Image>
+                                <img src={icon1}></img>
                                 <h4 className="subtitle">PROGRAMAÇÃO</h4>
                                 <p>Desenvolvemos sites, blogs, portfólios e outros sistemas web com o objetivo de proporcionar uma ótima solução ao cliente!</p>
                             </div>
                         </Col>
                         <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src={icon2}></Image>
+                                <img src={icon2}></img>
                                 <h4 className="subtitle">DESIGN GRÁFICO</h4>
                                 <p>Criamos logos, banners, panfletos e outros modelos de design com o objetivo de proporcionar uma ótima solução ao cliente!</p>
                             </div>
                         </Col>
                         <Col xs lg="4">
                             <div className="solutions_icons">
-                                <Image src={icon3}></Image>
+                                <img src={icon3}></img>
                                 <h4 className="subtitle">WEB DESIGNER</h4>
                                 <p>Analisamos e reparamos interfaces, cores, layouts e outros componentes com o objetivo de proporcioanr uma ótima solução de UX e UI ao cliente!</p>
                             </div>
@@ -112,8 +126,10 @@ const BodyContent = () => (
                 </Col>
             </Row>
 
-
-
+                <MDBRow>
+                <MDBCol size="12" className="borda_servicos_cima">
+                </MDBCol>
+                </MDBRow>
 
             <Row>
                 <ul className="gallery_box">
@@ -169,90 +185,27 @@ const BodyContent = () => (
                 </ul>
             </Row>
 
+                <MDBRow>
+                <MDBCol size="12" className="borda_marca1">
+                </MDBCol>
+                </MDBRow>
 
+            <Row className="text-white text-center py-5 px-4 bg_marcas ajuste_logo">
 
+                    <MDBCol size="12">
+                        <h1>QUEM <strong>CONFIA</strong></h1>
+                    </MDBCol>
 
-            <Row>
-                <Col xs lg="12" className="bg_depoimento">
-                    <h3 className="text-center title_depoimento">Depoimentos</h3>
-                    <Carousel indicators={false} interval={10000} className="ajustar_carousel">
-                        <Carousel.Item>
-                            <Row>
-                                <Col xs lg="2">
-
-                                </Col>
-                                <Col xs lg="3" className="text-center texto_depoimento">
-
-                                    <Col xs={12} md={12}>
-                                        <Image className="d-block w-10 imagem_ajuste" src="https://226363-691092-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2015/08/avt-500x500px-fundo-transp.png" />
-                                    </Col>
-
-                                    <h3>Fulano Beltrano</h3>
-                                    <p>"Me impressinou a qualidade e compromisso da empresa, com certeza irei solicitar outros serviços"</p>
-
-                                </Col>
-                                <Col xs lg="2">
-
-                                </Col>
-                                <Col xs lg="3" className="text-center texto_depoimento">
-
-                                    <Col xs={12} md={12}>
-                                        <Image className="d-block w-10 imagem_ajuste" src="https://uploads.scratch.mit.edu/users/avatars/34083956.png" />
-                                    </Col>
-
-
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                                </Col>
-                                <Col xs lg="2">
-
-                                </Col>
-
-                            </Row>
-                        </Carousel.Item>
-                        <Carousel.Item>
-
-                            <Row>
-                                <Col xs lg="2">
-
-                                </Col>
-                                <Col xs lg="3" className="text-center texto_depoimento">
-                                    <Col xs={12} md={12}>
-                                        <Image className="d-block w-10 imagem_ajuste" src="https://uploads.scratch.mit.edu/users/avatars/34083956.png"/>
-                                    </Col>
-
-
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                                </Col>
-                                <Col xs lg="2">
-
-                                </Col>
-                                <Col xs lg="3" className="text-center texto_depoimento">
-                                    <Col xs={12} md={12}>
-                                        <Image className="d-block w-10 imagem_ajuste" src="https://uploads.scratch.mit.edu/users/avatars/34083956.png"/>
-                                    </Col>
-
-
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                                </Col>
-                                <Col xs lg="2">
-
-                                </Col>
-
-                            </Row>
-                        </Carousel.Item>
-                    </Carousel>
-                </Col>
+                        <Col size="3"><img src={logo1}></img></Col>
+                        <Col size="3"><img src={logo2}></img></Col>
+                        <Col size="3"><img src={logo3}></img></Col>
+                        <Col size="3"><img src={logo4}></img></Col>
             </Row>
 
-
-
-
+                <MDBRow>
+                <MDBCol size="12" className="borda_marca2">
+                </MDBCol>
+                </MDBRow>
 
         </Container>
     </body>

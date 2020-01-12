@@ -110,8 +110,8 @@ const BodyContent = () => (
                         <Col xs lg="4">
                             <div className="solutions_icons">
                                 <img src={icon2}></img>
-                                <h4 className="subtitle">DESIGN GRÁFICO</h4>
-                                <p>Criamos logos, banners, panfletos e outros modelos de design com o objetivo de proporcionar uma ótima solução ao cliente!</p>
+                                <h4 className="subtitle">REDES SOCIAIS</h4>
+                                <p>Postagens, criação de imagens e impulsionamento para atingir ainda mais o público de sua marca!</p>
                             </div>
                         </Col>
                         <Col xs lg="4">

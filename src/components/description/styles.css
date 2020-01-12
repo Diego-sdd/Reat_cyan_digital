@@ -45,7 +45,31 @@ body{
 .cards .img-fluid{
     width: 100%;
     height: 200px;
+    background-image: linear-gradient(to right, #56e3e8 , #3ca6f8);
 }
+
+  .dentro_card{
+    position: relative;
+    background-color: #212121;
+    height: 85%;
+  }
+
+  .dentro_card h2{
+    color: #56e3e8;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 25%;
+    margin-bottom: -5px;
+  }
+
+  .dentro_card h1{
+    color: #56e3e8;
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 80px;
+  }
+
+
   .cards{
       margin-top:120px;
       margin-bottom: -100px;
@@ -110,16 +134,28 @@ body{
   }
 
 .text-contact-service{
-  margin-top:100px;
+  background-image: linear-gradient(to right bottom, #ffffff , #dadada);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-contact-service p{
   font-weight: bold;
-  margin-bottom:100px;
-  color:var(--primary);
-  font-size: 24pt;
+  color: #3ca6f8;
+  font-size: 32px;
 }
 
 .text-contact-service-solicite{
-  padding-left:50px;
-  padding-right: 50px;
+  padding-left:0px;
+  padding-right: 0px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.ajuste_btn{
+  margin-top: -10px;
 }
   
 .happy-company{
@@ -181,8 +217,19 @@ body{
   }
 
 
+  @media only screen and (max-width: 768px) {
+    .dentro_card h2{
+      padding-top: 10%;
+    }
+  }
+
+
 
 @media only screen and (max-width: 600px) {
+
+  .dentro_card h2{
+    padding-top: 10%;
+  }
 
   .borda_servicos_cima{
     height: 4px;
@@ -235,4 +282,12 @@ body{
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
     top: 363px;
   }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .dentro_card h2{
+    padding-top: 14%;
+  }
+
 }

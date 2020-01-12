@@ -127,7 +127,7 @@ const BodyContent = () => (
             </Row>
 
                 <MDBRow>
-                <MDBCol size="12" className="borda_servicos_cima">
+                <MDBCol size="12" className="borda_servico_cima">
                 </MDBCol>
                 </MDBRow>
 

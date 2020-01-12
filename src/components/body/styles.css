@@ -279,10 +279,10 @@ img{ max-width:100%;}
     margin-top: 0px;
 }
 
-.borda_servicos_cima{
+.borda_servico_cima{
     height: 4px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    margin-top: -184px;
+    margin-top:0px;
 }
 
 .borda_marca1{

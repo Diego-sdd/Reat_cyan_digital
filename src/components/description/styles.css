@@ -4,6 +4,7 @@
   --third: #000000d8;
   --white:rgb(240, 231, 231);
 }
+
 html { 
   font-family: 'Roboto', 'sans-serif'
   }
@@ -160,7 +161,7 @@ body{
   .borda_servicos_cima{
     height: 4px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 270px;
+    top: 90px;
   }
 
   .borda_servicos_baixo{
@@ -179,19 +180,12 @@ body{
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
   }
 
-@media only screen and (max-width: 608px) {
-
-  .borda_servicos_cima{
-    top: 270px;
-  }
-
-}
 
 
 @media only screen and (max-width: 600px) {
 
   .borda_servicos_cima{
-    height: 8px;
+    height: 4px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
     top: 400px;
   }
@@ -231,25 +225,14 @@ body{
   .text-contact-service{
     font-size: 22pt;
   }
-
 }
+
 
 @media only screen and (max-width: 593px) {
 
   .borda_servicos_cima{
-    height: 8px;
+    height: 4px;
     background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 360px;
+    top: 363px;
   }
-
-}
-
-@media only screen and (max-width: 308px) {
-
-  .borda_servicos_cima{
-    height: 8px;
-    background-image: linear-gradient(to right, #29eef5 , #1d8bdf);
-    top: 320px;
-  }
-
 }

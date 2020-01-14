@@ -22,8 +22,9 @@ const Routes = () => (
                 <Footer />
             </Route>
             <Route path="/contact">
+                <Header />
                 <Contact />
-
+                <Footer />
             </Route>
         </Switch>
     </HashRouter>

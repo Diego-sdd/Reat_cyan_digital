@@ -20,18 +20,18 @@ class Descriptions extends React.Component {
                         <img src={slide3}></img>
                         <figcaption>CONFIRA ABAIXO TODOS OS NOSSOS SERVIÇOS</figcaption>
                         <p>Somos uma Agência de Performance Digital, focada em gerar orçamentos,<br></br>
-                        negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</p>
+                            negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</p>
                     </div>
-                
+
                 </MDBRow>
 
-                    <MDBRow>
-                        <MDBCol size="12" className="borda_servicos_cima"></MDBCol>
-                    </MDBRow>
+                <MDBRow>
+                    <MDBCol size="12" className="borda_servicos_cima"></MDBCol>
+                </MDBRow>
 
                 <MDBRow className="bg_servicos">
 
-                <MDBCol md="5" className="text-servicos">
+                    <MDBCol md="5" className="text-servicos">
                         <h1 className="text-center">As Melhores soluções geram as <strong>Melhores Experiências.</strong></h1>
                         <p className="text-center">Oferecemos os mais diversos tipos de soluções buscando apresentar um serviço com qualidade e eficiência ao cliente.</p>
 
@@ -86,7 +86,7 @@ class Descriptions extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={uxui}/>
+                                        <MDBCardImage className="img-fluid" src={uxui} />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>UX/UI</h1>
@@ -101,7 +101,7 @@ class Descriptions extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={branding}/>
+                                        <MDBCardImage className="img-fluid" src={branding} />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>BRANDING</h1>
@@ -116,7 +116,7 @@ class Descriptions extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={sociais}/>
+                                        <MDBCardImage className="img-fluid" src={sociais} />
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>REDES SOCIAIS</h1>
@@ -130,7 +130,7 @@ class Descriptions extends React.Component {
                         </MDBRow>
                     </MDBCol>
 
-                        <MDBCol size="12" className="borda_servicos_baixo"></MDBCol>
+                    <MDBCol size="12" className="borda_servicos_baixo"></MDBCol>
 
                     <MDBCol md="12" className="happy-company">
                         <h1 className="happy-company_title text-center">QUALIDADE E EFICIÊNCIA PARA O SEU NEGÓCIO</h1>
@@ -141,9 +141,9 @@ class Descriptions extends React.Component {
                     </MDBCol>
                 </MDBRow>
 
-                    <MDBRow>
-                        <MDBCol size="12" className="borda_consultoria_cima"></MDBCol>
-                    </MDBRow>
+                <MDBRow>
+                    <MDBCol size="12" className="borda_consultoria_cima"></MDBCol>
+                </MDBRow>
 
                 <MDBRow className="text-contact-service">
                     <MDBCol md="8" className="text-center">
@@ -163,10 +163,10 @@ class Descriptions extends React.Component {
                     </MDBCol>
                 </MDBRow>
 
-                
-                    <MDBRow>
-                        <MDBCol size="12" className="borda_consultoria_baixo"></MDBCol>
-                    </MDBRow>
+
+                <MDBRow>
+                    <MDBCol size="12" className="borda_consultoria_baixo"></MDBCol>
+                </MDBRow>
 
             </MDBContainer>
         );

@@ -119,22 +119,22 @@ const BodyContent = () => (
                         <Col xs lg="4">
                             <div className="solutions_icons">
                                 <img src={icon1}></img>
-                                <h4 className="subtitle">PROGRAMAÇÃO</h4>
-                                <p>Desenvolvemos sites, blogs, portfólios e outros sistemas web com o objetivo de proporcionar uma ótima solução ao cliente!</p>
+                                <h4 className="subtitle">SISTEMAS WEB</h4>
+                                <p>Necessita de um sistema online? Conte conosco para desenvolver um sistema web que atenda seus expectativas!</p>
                             </div>
                         </Col>
                         <Col xs lg="4">
                             <div className="solutions_icons">
                                 <img src={icon2}></img>
                                 <h4 className="subtitle">REDES SOCIAIS</h4>
-                                <p>Postagens, criação de imagens e impulsionamento para atingir ainda mais o público de sua marca!</p>
+                                <p>Criação de postagens, elaboração de imagens e stories para atingir ainda mais o público de sua marca!</p>
                             </div>
                         </Col>
                         <Col xs lg="4">
                             <div className="solutions_icons">
                                 <img src={icon3}></img>
                                 <h4 className="subtitle">WEB DESIGNER</h4>
-                                <p>Analisamos e reparamos interfaces, cores, layouts e outros componentes com o objetivo de proporcioanr uma ótima solução de UX e UI ao cliente!</p>
+                                <p>Precisa de uma nova identidade para sua marca? Conte com nossa equipe para realizar os serviços necessários para a sua marca!</p>
                             </div>
                         </Col>
                     </Row>

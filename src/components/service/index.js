@@ -41,12 +41,21 @@ class Service extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={web} />
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    SISTEMAS
+                                                </h2>
+                                                <h1>
+                                                    WEB
+                                                </h1>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <h1>WEB SITES</h1>
-                                        <p>Criação de Site,</p>
-                                        <p>Blog, Portfólio,</p>
+                                        <h1>SISTEMAS WEB</h1>
+                                        <p>Criação de site,</p>
+                                        <p>blog, portfólio,</p>
                                         <p>e outros tipos de</p>
                                         <p>sistemas.</p>
                                     </div>
@@ -56,12 +65,21 @@ class Service extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={design} />
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    WEB
+                                                </h2>
+                                                <h1>
+                                                    DESIGN
+                                                </h1>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <h1>DESIGN GRÁFICO</h1>
-                                        <p>Criação de Logo,</p>
-                                        <p>Panfleto, Banner,</p>
+                                        <h1>WEB DESIGN</h1>
+                                        <p>Criação de logotipo,</p>
+                                        <p>panfleto, banner</p>
                                         <p>e outros tipos de</p>
                                         <p>serviços.</p>
                                     </div>
@@ -70,8 +88,17 @@ class Service extends React.Component {
 
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
-                                    <div style={{ width: "100%" }} className="flip-card-front">
-                                        <MDBCardImage className="img-fluid" src={seo} waves />
+                                <div style={{ width: "100%" }} className="flip-card-front">
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    OTIMIZAÇÃO
+                                                </h2>
+                                                <h1>
+                                                    SEO
+                                                </h1>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>SEO</h1>
@@ -85,8 +112,22 @@ class Service extends React.Component {
 
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
+<<<<<<< HEAD:src/components/service/index.js
                                     <div style={{ width: "100%" }} className="flip-card-front">
                                         <MDBCardImage className="img-fluid" src={uxui} />
+=======
+                                <div style={{ width: "100%" }} className="flip-card-front">
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    APLICAÇÃO DE
+                                                </h2>
+                                                <h1>
+                                                    UX/UI
+                                                </h1>
+                                            </div>
+                                        </div>
+>>>>>>> 2c66787558fe81c573108938d2ee5bfa70cb590d:src/components/description/index.js
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>UX/UI</h1>
@@ -100,8 +141,22 @@ class Service extends React.Component {
 
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
+<<<<<<< HEAD:src/components/service/index.js
                                     <div style={{ width: "100%" }} className="flip-card-front">
                                         <MDBCardImage className="img-fluid" src={branding} />
+=======
+                                <div style={{ width: "100%" }} className="flip-card-front">
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    CONSULTORIA DE
+                                                </h2>
+                                                <h1>
+                                                    MARCA
+                                                </h1>
+                                            </div>
+                                        </div>
+>>>>>>> 2c66787558fe81c573108938d2ee5bfa70cb590d:src/components/description/index.js
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>BRANDING</h1>
@@ -116,14 +171,27 @@ class Service extends React.Component {
                             <MDBCol md="4" className="flip-card">
                                 <div className="flip-card-inner">
                                     <div style={{ width: "100%" }} className="flip-card-front">
+<<<<<<< HEAD:src/components/service/index.js
                                         <MDBCardImage className="img-fluid" src={sociais} />
+=======
+                                        <div className="img-fluid">
+                                            <div className="dentro_card">
+                                                <h2>
+                                                    REDES
+                                                </h2>
+                                                <h1>
+                                                    SOCIAIS
+                                                </h1>
+                                            </div>
+                                        </div>
+>>>>>>> 2c66787558fe81c573108938d2ee5bfa70cb590d:src/components/description/index.js
                                     </div>
                                     <div class="flip-card-back">
                                         <h1>REDES SOCIAIS</h1>
-                                        <p>Realização de imagens,</p>
-                                        <p>postagens e outros</p>
-                                        <p>serviços para divulgação</p>
-                                        <p>de sua marca</p>
+                                        <p>Realização de postagens,</p>
+                                        <p>imagens, stories e</p>
+                                        <p>outros serviços em</p>
+                                        <p>redes sociais.</p>
                                     </div>
                                 </div>
                             </MDBCol>
@@ -149,13 +217,13 @@ class Service extends React.Component {
                     <MDBCol md="8" className="text-center">
                         <p> FICOU INTERESSADO EM NOSSOS SERVIÇOS?</p>
                     </MDBCol>
-                    <MDBCol md="4" className="text-center">
+                    <MDBCol md="4" className="text-center ajuste_btn">
                         <Fragment>
                             <MDBBtn
                                 href="#"
                                 target="_blank"
+                                outline 
                                 color="primary"
-                                rounded
                             >
                                 <div className="text-contact-service-solicite"> Solicite uma consultoria</div>
                             </MDBBtn>

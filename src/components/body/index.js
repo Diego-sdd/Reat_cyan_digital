@@ -12,6 +12,8 @@ import icon1 from '../body/image/programacao.png';
 import icon2 from '../body/image/designgrafico.png';
 import icon3 from '../body/image/webdesign.png';
 
+import inove from '../body/image/home_inova.png';
+
 import tipmart from '../body/image/tipmart.png';
 import openheart from '../body/image/openheart.png';
 import ac from '../body/image/agilecards.png';
@@ -87,11 +89,25 @@ const BodyContent = () => (
                 </MDBCarousel>
             </Row>
 
+            <MDBRow className="agencia_inove">
+                <MDBCol md="6" >
+                    <h1>A Agência de
+                        Marketing Digital</h1>
+                    <div className="border"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, lorem et volutpat porttitor,
+                         quam dui tempus purus, et lobortis diam metus non ex. Etiam nec volutpat justo.
+                        Vivamus ac libero metus. Aenean placerat metus sit amet feugiat viverra. Aliquam hendrerit
+                         nulla ut orci porta condimentum.</p>
+                </MDBCol>
+                <MDBCol md="6">
+                    <img src={inove}></img>
+                </MDBCol>
+            </MDBRow>
 
-                <MDBRow>
+            <MDBRow>
                 <MDBCol size="12" className="borda_solucoes_cima">
                 </MDBCol>
-                </MDBRow>
+            </MDBRow>
 
 
             <Row>
@@ -126,10 +142,10 @@ const BodyContent = () => (
                 </Col>
             </Row>
 
-                <MDBRow>
+            <MDBRow>
                 <MDBCol size="12" className="borda_servico_cima">
                 </MDBCol>
-                </MDBRow>
+            </MDBRow>
 
             <Row>
                 <ul className="gallery_box">
@@ -185,27 +201,37 @@ const BodyContent = () => (
                 </ul>
             </Row>
 
-                <MDBRow>
+            <MDBRow>
                 <MDBCol size="12" className="borda_marca1">
                 </MDBCol>
-                </MDBRow>
+            </MDBRow>
+            <Row className="text-white bg_marcas ajuste_logo">
+                <MDBCol size="4" className="bg_marcash1">
+                    <h1>QUEM <strong>CONFIA</strong></h1>
+                    <div className="border"></div>
+                </MDBCol>
+                <MDBCol size="8" >
 
-            <Row className="text-white text-center py-5 px-4 bg_marcas ajuste_logo">
-
-                    <MDBCol size="12">
-                        <h1>QUEM <strong>CONFIA</strong></h1>
-                    </MDBCol>
-
+                    <Row>
                         <Col size="3"><img src={logo1}></img></Col>
                         <Col size="3"><img src={logo2}></img></Col>
                         <Col size="3"><img src={logo3}></img></Col>
                         <Col size="3"><img src={logo4}></img></Col>
+                    </Row>
+
+                </MDBCol>
             </Row>
 
-                <MDBRow>
+            <MDBRow>
                 <MDBCol size="12" className="borda_marca2">
                 </MDBCol>
-                </MDBRow>
+            </MDBRow>
+
+            <MDBRow>
+                <MDBCol size="12">
+
+                </MDBCol>
+            </MDBRow>
 
         </Container>
     </body>

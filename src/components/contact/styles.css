@@ -3,5 +3,10 @@
     width: 100%;
 }
 .form-contact{
-    margin-top:10%;
+    margin-top:80px;
+    margin-bottom: 80px;
+}
+.form-contact p{
+    margin-bottom: -20px;
+    margin-top:-10px;
 }

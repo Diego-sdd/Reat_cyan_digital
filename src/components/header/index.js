@@ -39,7 +39,7 @@ class Header extends React.Component {
                   <MDBNavLink to="service">SERVIÇOS</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="results">RESULTADOS</MDBNavLink>
+                  <MDBNavLink to="quem-somos">Quem Somos</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
                   <MDBNavLink to="contact">CONTATO</MDBNavLink>

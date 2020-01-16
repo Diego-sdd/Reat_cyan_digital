@@ -203,71 +203,52 @@ img{ max-width:100%;}
 .gallery_box li:hover .box_data{ background: #156caf94;;}
 
 
-/* DEPOIMENTO */
 
-.title_depoimento{
-    margin-top:30px;
-    margin-bottom: 50px;
-    font-family: 'Roboto', 'sans-serif';
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #303030;
-    font-size: 30px;
-}
-
-.bg_depoimento{
-    background-color: #e3e3e3;
-    padding: 0px;
-    margin-top: -11px;
-    margin-bottom: -19px;
-}
-
-.imagem_ajuste{
-    border-radius: 50%;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
-
-.texto_depoimento h3{
-    font-size: 18px;
-    margin-top: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.texto_depoimento p{
-    font-size: 12px;
-    margin-top: 0px;
-    font-weight: 400;
-    text-transform: uppercase; 
-}
-
-.ajustar_carousel{
-    margin-top: -25px;
-    height: 250px;
-}
 
 .ajuste_logo img{
-    max-width: 100px;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
 }
-
+.ajuste_logo img:hover{
+    -webkit-filter: none;	
+	filter: none;	
+}
 .bg_marcas{
-    background-color: #333333;
-    text-align: center;
-    margin-top: -14px;
+   
+    background-image: url('../body//image/confia.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
 }
 
-.bg_marcas h1{
-    font-size: 24px;
+/* background-color: rgb(61, 61, 61);
+text-align: center;
+margin-top: 150px;
+transform: skewY(1.5deg);
+transform-origin: 110%; */
+
+.bg_marcash1 h1{
+    font-size: 42px;
     font-weight: 300;
-    margin-bottom: 20px;
-    margin-top: -30px;
+    text-align: center;
+    margin-top:100px;
+    color: black;
+    
+   
+}
+
+.bg_marcash1 .border{
+   background-color: var(--second);
+   height: 7px;
+   width: 33%;
+   margin-top: -10px;
+   margin-left: 15%;
+   margin-bottom: 10px;
 }
 
 /* BORDAS DEGRADE */
@@ -333,3 +314,36 @@ img{ max-width:100%;}
         margin-top: -244px;
     }
 }
+.agencia_inove{
+    margin-top:10%;
+    margin-bottom: 10%;
+
+}
+.agencia_inove img{
+   width: 80%;
+   border-radius: 60px;
+   transition: all 0.9s;
+}
+.agencia_inove img:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+	transition: all 0.9s;
+ }
+.agencia_inove h1{ 
+   margin-left: 20px;
+ 
+}
+.agencia_inove p{ 
+    margin-left: 20px;
+   text-align: justify;
+   margin-right: 20px;
+ }
+.agencia_inove .border{ 
+    background-color: var(--second);
+    height: 7px;
+    width: 27%;
+    margin-left: 20px;
+    margin-top: -8px;
+    margin-bottom: 50px;
+ }

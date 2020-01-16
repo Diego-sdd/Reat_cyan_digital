@@ -2,26 +2,58 @@ import React from "react";
 import '../contact/styles.css';
 import slide3 from '../body/image/slide3.png';
 import gif from '../contact/img/gif.gif';
+import axios from 'axios';
 import { MDBRow, MDBCol, MDBBtn, MDBContainer, MDBInput } from "mdbreact";
 
 class Descriptions extends React.Component {
-    state = {
-        fname: "",
-        lname: "",
-        email: "",
-        city: "",
-        state: "",
-        zip: ""
-    };
 
-    submitHandler = event => {
-        event.preventDefault();
-        event.target.className += " was-validated";
-    };
 
-    changeHandler = event => {
-        this.setState({ [event.target.name]: event.target.value });
-    };
+    handleSubmit(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        if (name == "" || email == "" || message == "") {
+            const Swal = require('sweetalert2');
+            Swal.fire({
+                title: 'Preencha Todos os Campos!',
+                text: 'Click aqui para continuar',
+                icon: 'error',
+                confirmButtonText: 'Continuar'
+            })
+            return
+        } else {
+
+            axios({
+                method: "POST",
+                url: "http://localhost:3002/send",
+                data: {
+                    name: name,
+                    email: email,
+                    messsage: message
+                }
+            }).then((response) => {
+                if (response.data.msg === 'success') {
+                    const Swal = require('sweetalert2');
+                    Swal.fire({
+                        title: 'Ebaa! Seus dados foram enviados',
+                        text: 'Entraremos em Contato com você.',
+                        icon: 'success',
+                        confirmButtonText: 'Continuar'
+                    })
+                    this.resetForm()
+                } else if (response.data.msg === 'fail') {
+                    alert("Message failed to send.")
+                }
+            })
+        }
+    }
+
+    resetForm() {
+        document.getElementById('contact-form').reset();
+    }
+
 
     render() {
         return (
@@ -38,80 +70,25 @@ class Descriptions extends React.Component {
 
                 </MDBRow>
 
-                <form
-                    className="needs-validation"
-                    onSubmit={this.submitHandler}
-                    noValidate
-                >
+                <form className="needs-validation" noValidate onSubmit={this.handleSubmit.bind(this)} method="POST" id="contact-form">
                     <MDBRow>
                         <MDBCol md="6">
                             <img src={gif}></img>
                         </MDBCol>
                         <MDBCol md="6" className="form-contact">
                             <MDBRow>
-                                <MDBCol md="6" className="mb-3">
-                                    <label
-                                        htmlFor="defaultFormRegisterEmailEx2"
-                                        className="grey-text"
-                                    >
-                                        Nome
-                                </label>
-                                    <input
-                                        value={this.state.lname}
-                                        name="lname"
-                                        onChange={this.changeHandler}
-                                        type="text"
-                                        id="defaultFormRegisterEmailEx2"
-                                        className="form-control"
-                                        placeholder="Nome"
-                                        required
-                                    />
-                                    <div className="valid-feedback">Looks good!</div>
+                                <MDBCol md="12">
+                                    <p>Nome</p>
+                                    <MDBInput type="name" label="Digite seu nome" id="name" outline />
                                 </MDBCol>
-                                <MDBCol md="6" className="mb-3">
-                                    <label
-                                        htmlFor="defaultFormRegisterEmailEx2"
-                                        className="grey-text"
-                                    >
-                                        Sobrenome
-                                </label>
-                                    <input
-                                        value={this.state.lname}
-                                        name="lname"
-                                        onChange={this.changeHandler}
-                                        type="text"
-                                        id="defaultFormRegisterEmailEx2"
-                                        className="form-control"
-                                        placeholder="Sobrenome"
-                                        required
-                                    />
-                                    <div className="valid-feedback">Looks good!</div>
+                                <MDBCol md="12">
+                                    <p>Email</p>
+                                    <MDBInput type="email" label="Digite seu email" id="email" outline />
                                 </MDBCol>
-                            </MDBRow>
-                            <MDBRow>
-                                <MDBCol md="12" className="mb-3">
-                                    <label
-                                        htmlFor="defaultFormRegisterConfirmEx3"
-                                        className="grey-text"
-                                    >
-                                        Email
-              </label>
-                                    <input
-                                        value={this.state.email}
-                                        onChange={this.changeHandler}
-                                        type="email"
-                                        id="defaultFormRegisterConfirmEx3"
-                                        className="form-control"
-                                        name="email"
-                                        placeholder="Digite seu email"
-                                    />
-                                    <small id="emailHelp" className="form-text text-muted">
-                                        Nunca compartilharemos seu email com mais ninguém.
-                                    </small>
-                                </MDBCol>
-                                <MDBCol md="12" className="mb-3">
 
-                                    <MDBInput type="textarea" label="Digite sua Mensagem" outline />
+                                <MDBCol md="12">
+                                    <p>Mensagem</p>
+                                    <MDBInput type="textarea" label="Digite sua Mensagem" id="message" name="message" outline />
                                 </MDBCol>
                             </MDBRow>
                             <MDBBtn color="primary" type="submit">
@@ -120,6 +97,11 @@ class Descriptions extends React.Component {
                         </MDBCol>
                     </MDBRow>
                 </form>
+
+
+
+
+
             </MDBContainer >
         );
     }

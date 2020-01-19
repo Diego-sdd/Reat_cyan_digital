@@ -102,7 +102,7 @@ const BodyContent = () => (
                                         <img src={icon3}></img>
                                         <h4 className="subtitle">Web <strong>Designer</strong></h4>
                                             <div className="borda"></div>
-                                        <p>Precisa de uma nova identidade para sua marca? Conte com nossa equipe para realizar os serviços necessários para a sua marca!</p>
+                                        <p>Precisa de uma nova identidade para sua marca? Conte com nossa equipe para realizar os serviços necessários para ela!</p>
                                     </div>
                                 </Col>
                             </Row>
@@ -121,14 +121,14 @@ const BodyContent = () => (
                 <ul className="gallery_box">
 
                     <li>
-                        <a href="#0"><img src={tipmart}></img>
+                        <a><img src={tipmart}></img>
                             <div className="box_data">
                                 <span className="boxtitle">TIPMART</span>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#0"><img src={openheart}></img>
+                        <a><img src={openheart}></img>
                             <div className="box_data">
                                 <span className="boxtitle">OPEN HEART</span>
                             </div>
@@ -137,7 +137,7 @@ const BodyContent = () => (
 
 
                     <li>
-                        <a href="#0"><img src={ac}></img>
+                        <a><img src={ac}></img>
                             <div className="box_data">
                                 <span className="boxtitle">LOGO AGILE CARDS</span>
                             </div>
@@ -145,7 +145,7 @@ const BodyContent = () => (
                     </li>
 
                     <li>
-                        <a href="#0"><img src={panfleto1}></img>
+                        <a><img src={panfleto1}></img>
                             <div className="box_data">
                                 <span className="boxtitle">PANFLETO S.I.</span>
                             </div>
@@ -154,7 +154,7 @@ const BodyContent = () => (
 
 
                     <li>
-                        <a href="#0"><img src={panfleto2}></img>
+                        <a><img src={panfleto2}></img>
                             <div className="box_data">
                                 <span className="boxtitle">PANFLETO N&N REPAROS</span>
                             </div>
@@ -162,7 +162,7 @@ const BodyContent = () => (
                     </li>
 
                     <li>
-                        <a href="#0"><img src={logotipmart}></img>
+                        <a><img src={logotipmart}></img>
                             <div className="box_data">
                                 <span className="boxtitle">LOGO TIPMART</span>
                             </div>
@@ -175,22 +175,29 @@ const BodyContent = () => (
                 <MDBCol size="12" className="borda_marca1">
                 </MDBCol>
             </MDBRow>
-            <Row className="text-white bg_marcas ajuste_logo">
-                <MDBCol size="4" className="bg_marcash1">
-                    <h1>QUEM <strong>CONFIA</strong></h1>
-                    <div className="border"></div>
-                </MDBCol>
-                <MDBCol size="8" >
 
-                    <Row>
-                        <Col size="3"><img src={logo1}></img></Col>
-                        <Col size="3"><img src={logo2}></img></Col>
-                        <Col size="3"><img src={logo3}></img></Col>
-                        <Col size="3"><img src={logo4}></img></Col>
-                    </Row>
-
-                </MDBCol>
-            </Row>
+                <MDBRow>                 
+                    <MDBCol md="12" className="confia-content text-center">
+                        <MDBRow>
+                        <MDBCol md="12">
+                           <h1 className="confia-content-title">Quem <strong>Confia</strong></h1>
+                           <div className="borda"></div>
+                        </MDBCol>   
+                            <MDBCol size="3">
+                                <img src={logo1}></img>
+                            </MDBCol>
+                            <MDBCol size="3">
+                                <img src={logo2}></img>
+                            </MDBCol>
+                            <MDBCol size="3">
+                                <img src={logo3}></img>
+                            </MDBCol>
+                            <MDBCol size="3">
+                                <img src={logo4}></img>
+                            </MDBCol>
+                        </MDBRow>
+                    </MDBCol>
+                </MDBRow>
 
             <MDBRow>
                 <MDBCol size="12" className="borda_marca2">

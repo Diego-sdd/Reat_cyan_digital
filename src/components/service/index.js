@@ -26,7 +26,7 @@ class Service extends React.Component {
 
                         <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
                         <h2 className="title">Serviços</h2>
-                        <h5 className="text">Veja o que podemos oferecer para seu negócio, desde o desenvolvimento web à gestão de redes sociais.</h5>
+                        <h5 className="text">Veja o que podemos oferecer para o seu negócio, consulte todos os tipos de atendimentos que podemos apresentar para você.</h5>
                         </MDBMask>
                     </MDBView>
                 </MDBRow>

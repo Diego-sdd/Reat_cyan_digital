@@ -49,3 +49,8 @@ html {
 .list-unstyled{
     margin-top:10px;
 }
+
+.footer-content{
+    background-image: url(./image/wallpaper-footer.png);
+    max-height: 500px;
+}

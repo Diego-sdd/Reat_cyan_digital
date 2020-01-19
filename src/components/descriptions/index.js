@@ -62,7 +62,7 @@ class Descriptions extends React.Component {
                                     <div className="valores-content-title">Visão</div>
                                     <div className="borda"></div>
                                     <div className="valores-content-text">
-                                        Tornar-se <strong>referência de atuação</strong> para o ambiente corporativo, através da <strong>excelência em soluções digitais</strong>, contribuindo para que o cliente alcança seus melhores resultados.
+                                        Tornar-se <strong>referência de atuação</strong> para o ambiente corporativo, através da <strong>excelência em soluções digitais</strong>, contribuindo para que o cliente alcance seus melhores resultados.
                                     </div>
                                 </MDBCol>
                                 <MDBCol size="4">

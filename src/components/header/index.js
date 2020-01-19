@@ -31,7 +31,7 @@ class Header extends React.Component {
             </MDBNavbarBrand>
             {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
             <MDBCollapse isOpen={this.state.collapse} navbar>
-              <MDBNavbarNav right>
+              <MDBNavbarNav right className="espacamento-direita">
                 <MDBNavItem>
                   <MDBNavLink to="/">HOME</MDBNavLink>
                 </MDBNavItem>
@@ -39,7 +39,7 @@ class Header extends React.Component {
                   <MDBNavLink to="service">SERVIÇOS</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="quem-somos">Quem Somos</MDBNavLink>
+                  <MDBNavLink to="quem-somos">SOBRE NÓS</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
                   <MDBNavLink to="contact">CONTATO</MDBNavLink>

@@ -4,9 +4,10 @@ import '../body/styles.css';
 import { Row, Container, Col, Image, Button, Carousel, Card } from 'react-bootstrap';
 import { MDBCarouselCaption, MDBMask, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView } from 'mdbreact';
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
-import slide1 from '../body/image/slide1.png';
-import slide2 from '../body/image/slide2.png';
-import slide3 from '../body/image/slide3.png';
+
+import wallpaper from '../body/image/wallpaper.png';
+import wallpaper2 from '../body/image/wallpaper2.png';
+
 
 import icon1 from '../body/image/programacao.png';
 import icon2 from '../body/image/designgrafico.png';
@@ -31,76 +32,37 @@ const BodyContent = () => (
     <body>
         <Container fluid={true} style={{ color: "black" }}>
             <Row>
-                <MDBCarousel
-                    activeItem={1}
-                    length={3}
-                    showControls={false}
-                    showIndicators={false}
-                    className="z-depth-1"
-                    slide
-                >
-                    <MDBCarouselInner>
-                        <MDBCarouselItem itemId="1">
-                            <MDBView>
-                                <img
-                                    className="d-block w-100"
-                                    src={slide1}
-                                    alt="First slide"
-                                />
-                                <MDBMask overlay="black-light" />
-                            </MDBView>
-                            <MDBCarouselCaption>
-                                <h3 className="h2-responsive title">DESENVOLVIMENTO WEB</h3>
-                                <p className="text">Conte conosco para a criação de seu website,
-                                 <br></br>com certeza não irá se arrepender!</p>
-                            </MDBCarouselCaption>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="2">
-                            <MDBView>
-                                <img
-                                    className="d-block w-100"
-                                    src={slide2}
-                                    alt="Second slide"
-                                />
-                                <MDBMask overlay="black-light" />
-                            </MDBView>
-                            <MDBCarouselCaption>
-                                <h3 className="h2-responsive title">DESIGN</h3>
-                                <p className="text">Conte conosco para a elaboração de Designs Gráficos e Web Designer,
-               <br></br>com certeza não irá se arrepender!</p>
-                            </MDBCarouselCaption>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="3">
-                            <MDBView>
-                                <img
-                                    className="d-block w-100"
-                                    src={slide3}
-                                    alt="Third slide"
-                                />
-                                <MDBMask overlay="black-light" />
-                            </MDBView>
-                            <MDBCarouselCaption>
-                                <h3 className="h2-responsive title">ABRACE A CYAN</h3>
-                                <p className="text">Ainda não contratou nossos serviços?
-              <br></br>Está esperando o que? Dê um upgrade já no seu negócio!</p>
-                            </MDBCarouselCaption>
-                        </MDBCarouselItem>
-                    </MDBCarouselInner>
-                </MDBCarousel>
+                <MDBView src={wallpaper} className="wallpaper-home">
+                    <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                        <path d="M0 0 L50 90 L100 0 V100 H0" />
+                    </svg>
+
+                    <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
+                    <h2 className="title">Soluções digitais</h2>
+                    <h5 className="text">Apresentamos soluções para Marketing Digital em todo o Brasil, principalmente em desenvolvimento de sites, identidades visuais, web design, gestão de redes sociais e muito mais!</h5>
+                    </MDBMask>
+                </MDBView>
+                
             </Row>
 
+            {/* <Row>
+                
+            <svg id="" preserveAspectRatio="xMidYMax meet" className="svg-separator sep4" viewBox="0 0 1600 200" data-height="200">
+                <polygon className="path1" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
+                <polygon className="path2" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+                <polygon className="path3" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon>
+            </svg>
+            </Row> */}
+
             <MDBRow className="agencia_inove">
-                <MDBCol md="6" >
+                <MDBCol className="agencia_inove_espacamento" md="6" >
                     <h1>A Agência de
                         Marketing Digital</h1>
-                    <div className="border"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, lorem et volutpat porttitor,
-                         quam dui tempus purus, et lobortis diam metus non ex. Etiam nec volutpat justo.
-                        Vivamus ac libero metus. Aenean placerat metus sit amet feugiat viverra. Aliquam hendrerit
-                         nulla ut orci porta condimentum.</p>
+                    <div className="borda"></div>
+                    <p>Somos uma equipe capacitada em atender todas as demandas e questionamentos dos nossos clientes, com o intuito de produzir o melhor resultado para eles.</p>
                 </MDBCol>
-                <MDBCol md="6">
-                    <img src={inove}></img>
+                <MDBCol className="agencia_inove_espacamento" md="6">
+                    <img src="https://www.seekpng.com/png/full/355-3550412_contact-us-today-to-see-how-we-can.png"></img>
                 </MDBCol>
             </MDBRow>
 
@@ -111,35 +73,43 @@ const BodyContent = () => (
 
 
             <Row>
-                <Col xs lg="12" className="content_products">
-                    <Col xs lg="12">
-                        <h4 id="title_content_products">Principais Soluções</h4>
-                    </Col>
-                    <Row>
-                        <Col xs lg="4">
-                            <div className="solutions_icons">
-                                <img src={icon1}></img>
-                                <h4 className="subtitle">SISTEMAS WEB</h4>
-                                <p>Necessita de um sistema online? Conte conosco para desenvolver um sistema web que atenda seus expectativas!</p>
+                <MDBView src={wallpaper2} className="content_products">
+                    <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
+                        <Col lg="12" className="text-center flex-center flex-column" align="center">
+                            <div className="solucoes_title">
+                            Principais <strong>Soluções</strong>
                             </div>
+                        
+                            <Row>
+                                <Col xs lg="4">
+                                    <div className="solutions_icons">
+                                        <div className="alinhar-imagem-solucoes"><img src={icon1}></img></div>
+                                        <h4 className="subtitle">Sistemas <strong>Web</strong></h4>
+                                            <div className="borda"></div>
+                                        <p>Necessita de um sistema online? Conte conosco para desenvolver um sistema web que atenda seus expectativas!</p>
+                                    </div>
+                                </Col>
+                                <Col xs lg="4">
+                                    <div className="solutions_icons">
+                                        <img src={icon2}></img>
+                                        <h4 className="subtitle">Redes <strong>Sociais</strong></h4>
+                                            <div className="borda"></div>
+                                        <p>Criação de postagens, elaboração de imagens e stories para atingir ainda mais o público de sua marca!</p>
+                                    </div>
+                                </Col>
+                                <Col xs lg="4">
+                                    <div className="solutions_icons">
+                                        <img src={icon3}></img>
+                                        <h4 className="subtitle">Web <strong>Designer</strong></h4>
+                                            <div className="borda"></div>
+                                        <p>Precisa de uma nova identidade para sua marca? Conte com nossa equipe para realizar os serviços necessários para a sua marca!</p>
+                                    </div>
+                                </Col>
+                            </Row>
                         </Col>
-                        <Col xs lg="4">
-                            <div className="solutions_icons">
-                                <img src={icon2}></img>
-                                <h4 className="subtitle">REDES SOCIAIS</h4>
-                                <p>Criação de postagens, elaboração de imagens e stories para atingir ainda mais o público de sua marca!</p>
-                            </div>
-                        </Col>
-                        <Col xs lg="4">
-                            <div className="solutions_icons">
-                                <img src={icon3}></img>
-                                <h4 className="subtitle">WEB DESIGNER</h4>
-                                <p>Precisa de uma nova identidade para sua marca? Conte com nossa equipe para realizar os serviços necessários para a sua marca!</p>
-                            </div>
-                        </Col>
-                    </Row>
+                    </MDBMask>
+                </MDBView>
 
-                </Col>
             </Row>
 
             <MDBRow>

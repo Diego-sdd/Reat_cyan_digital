@@ -3,7 +3,11 @@ import '../contact/styles.css';
 import slide3 from '../body/image/slide3.png';
 import gif from '../contact/img/gif.gif';
 import axios from 'axios';
-import { MDBRow, MDBCol, MDBBtn, MDBContainer, MDBInput } from "mdbreact";
+import wallpapercontact from '../contact/img/wallpaper-contact.png';
+
+import { Row, Container, Col, Image, Button, Carousel, Card } from 'react-bootstrap';
+import { MDBCarouselCaption, MDBMask, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView } from 'mdbreact';
+import { MDBJumbotron, MDBInput, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 
 class Descriptions extends React.Component {
 
@@ -58,24 +62,30 @@ class Descriptions extends React.Component {
     render() {
         return (
             <MDBContainer fluid={true}>
-                <MDBRow>
 
+                    <Row>
+                        <MDBView src={wallpapercontact} className="wallpaper-home">
+                            <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                                <path d="M0 0 L50 90 L100 0 V100 H0" />
+                            </svg>
 
-                    <div className="img_top text-center">
-                        <img src={slide3}></img>
-                        <figcaption>CONFIRA ABAIXO TODOS OS NOSSOS SERVIÇOS</figcaption>
-                        <p>Somos uma Agência de Performance Digital, focada em gerar orçamentos,<br></br>
-                            negócios e vendas para nossos clientes. Confira a seguir nossas estratégias.</p>
-                    </div>
+                            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
+                            <h2 className="title">Entre em contato</h2>
+                            <h5 className="text">Nos envie já uma mensagem ou se preferir entre em contato por meio de nossas redes sociais.</h5>
+                            </MDBMask>
+                        </MDBView>
+                        
+                    </Row>
 
-                </MDBRow>
 
                 <form className="needs-validation" noValidate onSubmit={this.handleSubmit.bind(this)} method="POST" id="contact-form">
-                    <MDBRow>
-                        <MDBCol md="6">
-                            <img src={gif}></img>
+                    <MDBRow className="contato-content">
+                        <MDBCol md="6" className="contato-content-espacamento">
+                                <h1>Envie uma <strong>mensagem</strong></h1>
+                                <div className="borda"></div>
+                                <p>Ficou interessado em nossos serviços? Entre já em contato conosco por meio deste formulário, iremos atender você o mais rápido possível!</p>
                         </MDBCol>
-                        <MDBCol md="6" className="form-contact">
+                        <MDBCol md="6" className="form-contact text-white">
                             <MDBRow>
                                 <MDBCol md="12">
                                     <p>Nome</p>
@@ -99,7 +109,9 @@ class Descriptions extends React.Component {
                 </form>
 
 
-
+                <MDBRow>
+                    <MDBCol size="12" className="contato-borda-baixo"></MDBCol>
+                </MDBRow>
 
 
             </MDBContainer >
